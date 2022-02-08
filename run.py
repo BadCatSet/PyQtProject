@@ -38,7 +38,7 @@ class Item(QWidget):
         self.picture.setStyleSheet(
             """QLabel{border-image: url(item_pic/?.png);}""".replace('?', str(_vars[0][0])))
         self.name.setText(dat[1])
-        self.price.setText(str(price)+' руб.')
+        self.price.setText(str(price) + ' руб.')
         self.dat = dat
 
     def mouseDoubleClickEvent(self, event):
